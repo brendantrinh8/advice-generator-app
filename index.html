@@ -2,26 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
-
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/favicon-32x32.png">
 </head>
-<body>
-  <main>
-    <section>
-      
-    </section>
-  </main>
-  Advice #<!-- Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
-  
+<body>
+  <main class="main-container">
+    <div class="advice-card">
+      <div class="advice-header">
+        <p>ADVICE #<span class="advice-id">117</span></p>
+      </div>
+      <div class="Quote">
+        <h1 class="advice-quote">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h1>
+      </div>
+      <div class="divider">
+      <img src="./images/pattern-divider-desktop.svg" alt="img-divider">
+      </div>
+      <div class="dice-btn">
+        <img src="./images/icon-dice.svg" alt="icon-dice">
+      </div>
+      </div>
+    </div>
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Brendan Trinh</a>.
   </div>
-</body>
+
+  <script src="adviceGen.js"></script>
+  </body>
 </html>
