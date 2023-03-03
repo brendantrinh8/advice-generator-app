@@ -1,5 +1,13 @@
-const adviceNum = document.getElementById('advice-id')
-const adviceQuote = document.getElementById('advice-quote')
+const adviceNum = document.querySelector('.advice-id')
+const adviceQuote = document.querySelector('.advice-quote')
+const diceBtn = document.querySelector('.dice-btn')
+
+// Generate Advice when window loads
+window.addEventListener("DOMContentLoaded", () => {
+    generateAdvice();
+});
+// refreshes advice when dice button is clicked
+diceBtn.addEventListener("click", generateAdvice);
 
 function generateAdvice() {
     const url = 'https://api.adviceslip.com/advice';
@@ -15,14 +23,14 @@ function generateAdvice() {
             displayData(data);
             console.log(data);
         })
+        .then()
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
         });
 }
-
-generateAdvice()    
+  
 function displayData(data) {
-    adviceNum.innerText = data.slip.id;
-    adviceQuote.innerText = data.slip
+    adviceNum.innerHTML = `${data.slip.id}`;
+    adviceQuote.innerHTML = `${data.slip.advice}`;
 
 }
