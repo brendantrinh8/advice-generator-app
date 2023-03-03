@@ -31,6 +31,6 @@ function generateAdvice() {
   
 function displayData(data) {
     adviceNum.innerHTML = `${data.slip.id}`;
-    adviceQuote.innerHTML = `${data.slip.advice}`;
+    adviceQuote.innerHTML = `"${data.slip.advice}"`;
 
 }
