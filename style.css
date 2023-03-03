@@ -49,11 +49,15 @@ p {
   overflow-wrap: break-word;
 
 }
-.divider {
+.desk-divider {
   display: flex;
   width: auto;
   margin: 1em 0 1em;
 }
+.mob-divider {
+  display: none;
+}
+
 .dice-btn {
   display: flex;
   align-items: center;
@@ -67,6 +71,8 @@ p {
   cursor: pointer;
 
 }
+
+/* footer */
 .attribution { 
   position: absolute;
   bottom: 0;
@@ -76,4 +82,20 @@ p {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+/* phone format */
+@media (max-width: 600px) {
+.advice-card {
+  max-width: 300px;
+  max-height: 370px;
+}
+.mob-divider {
+  display: flex;
+  width: auto;
+  margin: 1em 0 2em;
+}
+.desk-divider{
+  display: none;
+}
 }
