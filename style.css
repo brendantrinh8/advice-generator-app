@@ -12,6 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
   background-color: var(--Dark-Blue);
   font-family: 'Manrope', sans-serif;
 }
@@ -68,8 +69,11 @@ p {
   width: 64px;
   background-color: var(--Neon-Green);
   border-radius: 32px;
+  
+}
+.dice-btn:hover {
   cursor: pointer;
-
+  box-shadow: 0rem 0rem 1rem #52ffa8;
 }
 
 /* footer */
@@ -77,18 +81,21 @@ p {
   position: absolute;
   bottom: 0;
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  color: white;
 }
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
 
-/* phone format */
-@media (max-width: 600px) {
+/* phone format in portrait */
+@media (min-width: 375px) and (max-width: 768px) {
+
 .advice-card {
-  max-width: 300px;
+  max-width: 280px;
   max-height: 370px;
+  
 }
 .mob-divider {
   display: flex;

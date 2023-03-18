@@ -15,7 +15,7 @@ function generateAdvice() {
     fetch(url)
         .then(response => {
             if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Error with fetching API data');
             }
             return response.json();
         })
